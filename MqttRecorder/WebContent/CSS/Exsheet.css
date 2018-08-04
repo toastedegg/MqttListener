@@ -1,0 +1,438 @@
+/*
+This is an external CSS sheet for the table of detail info from the selected MQTT packet
+The start of the sheet included some external font used in the table 
+*/
+@font-face{
+	font-family: 'Segoe UI';
+	src: url('../fonts/Segoe_UI.ttf') format('truetype');
+	
+}
+@font-face{
+	font-family: "Fira Sans";
+	src: url('../fonts/FiraSans-Regular.otf') format('opentype');
+}
+@font-face{
+	font-family: "Droid Sans";
+	src: url('../fonts/DroidSans.ttf') format('turetype');
+}
+
+
+
+
+html, body {
+    background-color: #77E4A3;
+	margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}	
+	
+#top_block {
+    height:10%;
+    width:100%;
+	padding: 0.5%;
+	border-style: none none double none;
+	background-color: #FCFCFC;
+	position:static;
+	margin: 0 0 0 0;
+	flex: none;
+}
+
+
+#Title {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	font-size: 200%;
+	transform: scale(1.1,1);
+	padding: 0 0 0 5%;	
+	
+	
+}
+
+
+#back_nav {
+	font-family: 'Segoe UI';
+	font-size: 120%;
+	margin-left:-1%;
+	margin-top:-1%;
+	margin-bottom:0%;
+	background-color: #FCFCFC;
+	width:5%;
+	height:1%;
+	padding-left:6.9%;
+	padding-top: 4.5%;
+	padding-bottom: 2%;
+	padding-right: 1.5%;
+	border-right-style: groove;
+	border-width: 5px;
+}
+
+
+#back_nav:hover{
+	background-color: #77E4A3;
+	color: white;
+	
+	
+	
+}
+#nav {
+	margin-left:-3%;
+	margin-top:-3%;
+	margin-right: -1%;
+	padding: 0.5%;
+	padding-bottom:0%;
+	border-bottom-style: double;
+	background-color: #FCFCFC;
+	position:relative;
+}
+
+#home_icon{
+	position:relative;
+	z-index:50;
+	height: 50%;
+	width: 50%;
+	vertical-align: -50%;
+	margin: -40%;
+	margin-bottom:-60%;
+	margin-right:-90%;
+	margin-left:-82%;
+	padding: 40%;
+	padding-bottom:60%;
+	padding-right:90%;
+	padding-left:85%;
+	
+}
+
+.detail_button
+{
+	height:25px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	line-height: 5px;	
+	
+	
+}
+
+.T_Header{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	font-size: 100%;
+	word-spacing: 0ed.5em;
+	text-align: center;
+	max-width: 50%;
+	width:50%;
+	border-bottom: 2px solid #111111;
+	border-top: 1px solid #111111;
+    padding: 0% 0% 0% 0%;
+    border-left: 1px solid #111111;
+    border-right: 1px solid #111111;
+    font-weight: normal;
+}
+
+
+
+.T_Cell{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	font-size: 100%;
+	word-spacing: 0ed.5em;
+	text-align: center;
+	max-width: 50%;
+	width:50%;
+	border-bottom: 1px solid #111111;
+	border-top: 1px solid #111111;
+    padding: 0% 0% 0% 0%;
+    border-left: 1px solid #111111;
+    border-right: 1px solid #111111;
+    font-weight: normal;
+}
+
+
+#Col1{
+	float:left;
+	width:30%;
+	margin: 1% 1% 1% 1%;
+	background: #77E4A3;
+	text-align: center;
+}
+
+
+#Col2{
+	float:left;
+	width:65%;
+	margin: 1% 1% 1% 1%;
+	background: #77E4A3;
+	text-align: center;
+	max-height:800px;
+	overflow:scroll;
+}
+
+
+#empty_table{
+	text-align:center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	font-size: 250%;
+	color: #757575; 
+	background-color:#e0e0e0;
+	margin:0,0,0,0;
+	border-style: none none none none;
+	border-radius: 0 0 15px 15px;
+	
+}
+
+
+
+
+.overviewer{
+	width: 100%;
+	margin: 0%;
+	background: #FCFCFC;
+	border-spacing: 0 0;
+	border-collapse: seperate;
+	height:800px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.overviewer td:empty{
+	border: 0 0 0 0;
+	background-color:#e0e0e0;
+	border-radius: 0 0 15px 15px;
+}
+
+#ov_corner_left{
+	border-radius: 15px 0 0 0;
+}
+
+#ov_corner_right{
+	border-radius: 0 15px 0 0 ;
+}
+
+
+.ov_header{
+	 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	margin: 0 0 0 0;
+	padding: 0.5% 0.5% 0.5% 0.5%;
+	background: #b8e1fc; /* Old browsers */
+    background: -moz-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 );
+	text-shadow: 0px -1px 1px rgba(5,5,255,.5);
+	-webkit-box-shadow: 0px 2px 0px #2b638f, 0 3px 15px rgba(0,0,0,.4);
+	-moz-box-shadow: 0px 2px 0px #2b638f,0 3px 15px rgba(0,0,0,.4);
+	box-shadow: 0px 2px 0px #2b638f,0 3px 15px rgba(0,0,0,.4);
+	height:30px;
+}
+
+.ov_element{
+	height: 30px;
+	text-align:center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	color: #848784;
+}
+.ov_element:nth-child(odd){
+	background-color: #ccf5fc;
+	
+}
+
+.Table_JSON{ 
+	margin: 0%;
+	background: #FCFCFC;
+	border-spacing: 0 0;
+	width:100%;
+	border-collapse: collapse;
+    border-style:hidden;
+}
+
+
+.Table_JSON_outer{ 
+	margin: 0%;
+	background: #FCFCFC;
+	border-spacing: 0 0;
+	width:100%;
+	border-collapse: collapse;
+}
+
+.Table_Block_JSON{
+	width: 45%;
+	margin: 1%;
+	float: left;
+	background: #FCFCFC;
+}
+
+
+
+
+.input_form{
+    font: 95% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.input_form h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.input_form input[type="text"],
+.input_form input[type="date"],
+.input_form input[type="datetime"],
+.input_form input[type="email"],
+.input_form input[type="number"],
+.input_form input[type="search"],
+.input_form input[type="time"],
+.input_form input[type="url"],
+.input_form textarea,
+.input_form select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;;
+}
+.input_form input[type="text"]:focus,
+.input_form input[type="date"]:focus,
+.input_form input[type="datetime"]:focus,
+.input_form input[type="email"]:focus,
+.input_form input[type="number"]:focus,
+.input_form input[type="search"]:focus,
+.input_form input[type="time"]:focus,
+.input_form input[type="url"]:focus,
+.input_form textarea:focus,
+.input_form select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.input_form input[type="submit"],
+.input_form input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;   
+    color: #fff;
+    margin-bottom:3%;
+}
+.input_form input[type="submit"]:hover,
+.input_form input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+
+.radio_header
+{
+	color:#2B2B2B;
+	float:left;
+	margin: 1% 1% 5% 1%;
+	clear: left;
+}
+
+.Status{
+	color:#2B2B2B;
+}
+
+
+.container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #77E4A3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.topic_n_status_p
+{
+	font: 95% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	text-align:left;
+}
+
+
+#topiclist
+{
+	font: 105% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	list-style-type:none;
+}

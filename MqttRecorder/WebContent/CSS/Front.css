@@ -1,0 +1,58 @@
+/*
+This is an external CSS sheet for the frontpage
+*/
+
+@font-face{
+	font-family: 'Segoe UI';
+	src: url('../fonts/Segoe_UI.ttf') format('truetype');
+	
+}
+@font-face{
+	font-family: "Fira Sans";
+	src: url('../fonts/FiraSans-Regular.otf') format('opentype');
+}
+@font-face{
+	font-family: "Droid Sans";
+	src: url('../fonts/DroidSans.ttf') format('turetype');
+}
+
+
+html, body {
+	background-color: #f7f7f7;
+	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
+.header{
+
+	margin: 8%;
+}
+.title {
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	text-align:center;
+	font-size: 400%;
+	color: #486884;
+}
+
+
+#col1,#col2{
+	width:45%;
+	margin:2%;
+	float:left;
+}
+
+.intro_text{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif;
+	text-align:center;
+	color: #486884;
+}
+
+#movie_pic:hover,#mqtt_pic:hover
+{
+	    box-shadow: 0 0 5px #43D1AF;
+	
+}
